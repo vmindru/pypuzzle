@@ -16,11 +16,11 @@ class Base:
 			puzz.button=gtk.Button("testme")	
 			puzz.button.connect("clicked",puzz.hello,None)	
 			
-
-			puzz.window.add(puzz.button)
-			puzz.window.add(puzz.box_main)				
-
-
+			
+			puzz.window.add(puzz.box_main)
+			puzz.box_main.pack_start(puzz.button,True,True,0)
+		
+			puzz.box_main.show()	
 			puzz.button.show()			
 			puzz.window.show() 
 	
