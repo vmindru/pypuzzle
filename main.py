@@ -7,31 +7,31 @@ class Base:
 		def __init__(puzz):
 			puzz.window = gtk.Window(gtk.WINDOW_TOPLEVEL)
 
-			puzz.window.set_border_width(200)	
+			puzz.window.set_border_width(200)
 			puzz.window.set_title("Magic Puzzle")
 			puzz.window.connect("delete_event", puzz.delete_event)
-			
+
 			puzz.box_main = gtk.HBox(False, 0)
-				
-			puzz.button=gtk.Button("testme")	
-			puzz.button.connect("clicked",puzz.hello,None)	
-			
-			
+
+			puzz.button=gtk.Button("testme")
+			puzz.button.connect("clicked",puzz.hello,None)
+
+
 			puzz.window.add(puzz.box_main)
 			puzz.box_main.pack_start(puzz.button,True,True,0)
-		
-			puzz.box_main.show()	
-			puzz.button.show()			
-			puzz.window.show() 
-	
-		
+
+			puzz.box_main.show()
+			puzz.button.show()
+			puzz.window.show()
+
+
 		def hello(puzz, widget, data=None):
 			print "testme data"
-	
+
 		def delete_event(self, widget, event, data=None):
 			gtk.main_quit()
-			return False	
-		
+			return False
+
 		def main(puzz):
 			gtk.main()
 
