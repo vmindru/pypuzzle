@@ -23,13 +23,15 @@ class Game(object):
 					return
 				if event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE:
 					return
+			if 
 			screen.fill((200, 200, 200))
-			print "spwaning at %i %i" % (image_x, image_y)
+#			print "spwaning at %i %i" % (image_x, image_y)
 			screen.blit(image, (image_x, image_y))
 			pygame.display.flip()
 
 class Draw(Game):
 	pass
+
 
 
 
