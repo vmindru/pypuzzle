@@ -1,4 +1,4 @@
 pypuzzle
 ========
 
-Image Puzzle game 
+DISCONTINUED.
